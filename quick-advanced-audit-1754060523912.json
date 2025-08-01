@@ -1,0 +1,59 @@
+{
+  "connection": true,
+  "evmVersion": "shanghai",
+  "criticalEIPs": {
+    "EIP-1559": true,
+    "EIP-3855": true,
+    "EIP-1344": true,
+    "EIP-3198": true
+  },
+  "rpcCompatibility": {
+    "score": 88,
+    "supported": 7,
+    "total": 8,
+    "details": {
+      "eth_chainId": {
+        "supported": true
+      },
+      "eth_blockNumber": {
+        "supported": true
+      },
+      "eth_getBalance": {
+        "supported": true
+      },
+      "eth_gasPrice": {
+        "supported": true
+      },
+      "eth_estimateGas": {
+        "supported": true
+      },
+      "eth_call": {
+        "supported": true
+      },
+      "eth_sendRawTransaction": {
+        "supported": false,
+        "error": "could not coalesce error (error={ \"code\": -32602, \"data\": \"RlpIncorrectListLen\", \"message\": \"Invalid RLP.\" }, payload={ \"id\": 17, \"jsonrpc\": \"2.0\", \"method\": \"eth_sendRawTransaction\", \"params\": [ \"0x\" ] }, code=UNKNOWN_ERROR, version=6.15.0)"
+      },
+      "eth_getTransactionReceipt": {
+        "supported": true
+      }
+    }
+  },
+  "deploymentTest": {
+    "success": true,
+    "gasEstimate": "0xcf08",
+    "description": "Gas estimation successful"
+  },
+  "recommendations": [
+    "✅ EVM is Shanghai compatible",
+    "✅ RPC compatibility looks good",
+    "✅ Contract deployment should work",
+    "🎉 Chain is compatible with Solidity 0.8.23"
+  ],
+  "chainInfo": {
+    "chainId": 9982,
+    "blockNumber": 5445664,
+    "rpcUrl": "https://rpc.mfevscan.com",
+    "balance": "0.291157100000269817"
+  }
+}

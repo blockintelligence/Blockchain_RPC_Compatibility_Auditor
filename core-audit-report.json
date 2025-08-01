@@ -26,7 +26,7 @@
           0,
           0
         ],
-        "oldestBlock": "0x53082b",
+        "oldestBlock": "0x5316f8",
         "reward": [
           [
             "0x0",
@@ -61,11 +61,11 @@
     },
     "eth_blockNumber": {
       "supported": true,
-      "result": "0x53082e"
+      "result": "0x5316fb"
     },
     "eth_getBalance": {
       "supported": true,
-      "result": "0x1bc16d674ec80000"
+      "result": "0x40a65d6ff5955f9"
     },
     "eth_call": {
       "supported": true,
@@ -105,19 +105,19 @@
     "isStable": true,
     "blocks": [
       {
-        "number": 5441582,
-        "timestamp": 1754040110,
-        "hash": "0x9e46a2d2de97f66f2d1cafb1b45f527f7612160a2fccc46578bb852a9b7dd0e0"
+        "number": 5445371,
+        "timestamp": 1754059055,
+        "hash": "0xbe768c894b238ce04407e2bf745ddf2088016fbe782f2bb3044e1838c5157cc2"
       },
       {
-        "number": 5441581,
-        "timestamp": 1754040105,
-        "hash": "0x1074574553df0c325e6ea365b0a2ce64922eb362af490d450d2b4538912a2137"
+        "number": 5445370,
+        "timestamp": 1754059050,
+        "hash": "0x2d4dfbb337056ab967aff8902e0580f27e5702d231d7a54638e4ef58b7621d2f"
       },
       {
-        "number": 5441580,
-        "timestamp": 1754040100,
-        "hash": "0x377af63aef5e3b6b61d6c225927e87b99fb1fe63095d1e0b1c2e7468b7807024"
+        "number": 5445369,
+        "timestamp": 1754059045,
+        "hash": "0x64e35c303bd1c1a7e239c40c9aa7225009413543f3a341ad4bd4ad71a91f8cb8"
       }
     ]
   },
@@ -174,10 +174,10 @@
     "🛠️  Chain needs improvements for production readiness"
   ],
   "chainInfo": {
-    "blockNumber": "5441581",
+    "blockNumber": "5445370",
     "chainId": 9982,
     "rpcUrl": "https://rpc.mfevscan.com",
-    "balance": "2.0",
+    "balance": "0.291157100000269817",
     "address": "0xcd6f9715eAD50841929C5cda9ad78605AF71F1f2"
   },
   "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3"

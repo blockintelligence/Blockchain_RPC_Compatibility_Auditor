@@ -20,6 +20,17 @@
     "upgrade-recommendations": "node scripts/upgrade-recommendations.js",
     "multi-chain-audit": "node scripts/multi-chain-audit.js",
     "comprehensive-test": "node scripts/comprehensive-smart-contract-test.js",
+    "deploy-mfev": "node scripts/deploy-to-mfev-mainnet.js",
+    "deploy-mfev-simple": "node scripts/simple-mfev-deploy.js",
+    "check-deployment": "node scripts/check-deployment.js",
+    "find-contract": "node scripts/find-deployed-contract.js",
+    "deploy-fresh": "node scripts/fresh-mfev-deploy.js",
+    "deploy-high-gas": "node scripts/high-gas-deploy.js",
+    "check-tx": "node scripts/check-tx.js",
+    "mfev-report": "node scripts/mfev-compatibility-report.js",
+    "advanced-audit-fixed": "hardhat run scripts/advanced-evm-audit-fixed.js",
+    "quick-audit": "hardhat run scripts/quick-advanced-audit.js",
+    "definitive-audit": "hardhat run scripts/definitive-audit.js",
     "report": "node scripts/generate-report.js"
   },
   "keywords": [

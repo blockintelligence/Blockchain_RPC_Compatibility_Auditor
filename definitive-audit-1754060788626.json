@@ -1,0 +1,103 @@
+{
+  "connection": true,
+  "evmVersion": "shanghai",
+  "shanghaiFeatures": {
+    "PUSH0": {
+      "supported": true,
+      "result": "0x"
+    },
+    "MCOPY": {
+      "supported": true,
+      "result": "0x"
+    },
+    "TransientStorage": {
+      "supported": false,
+      "error": "could not coalesce error (error={ \"code\": -32601, \"message\": \"Method not found\" }, payload={ \"id\": 8, \"jsonrpc\": \"2.0\", \"method\": \"eth_getTransientStorage\", \"params\": [ \"0x0\", \"0x0\" ] }, code=UNKNOWN_ERROR, version=6.15.0)"
+    },
+    "BeaconRoot": {
+      "supported": false,
+      "error": "could not coalesce error (error={ \"code\": -32601, \"message\": \"Method not found\" }, payload={ \"id\": 9, \"jsonrpc\": \"2.0\", \"method\": \"eth_getBeaconRoot\", \"params\": [ \"latest\" ] }, code=UNKNOWN_ERROR, version=6.15.0)"
+    }
+  },
+  "londonFeatures": {
+    "EIP-1559": {
+      "supported": true,
+      "baseFee": "1899999999999"
+    },
+    "EIP-3198": {
+      "supported": true,
+      "result": "0x"
+    },
+    "EIP-3651": {
+      "supported": true,
+      "result": "0x"
+    },
+    "EIP-1344": {
+      "supported": true,
+      "chainId": 9982
+    }
+  },
+  "contractDeployment": {
+    "success": false,
+    "error": "HH700: Artifact for contract \"SimpleTest\" not found. ",
+    "description": "Contract deployment failed"
+  },
+  "rpcCompatibility": {
+    "score": 78,
+    "supported": 7,
+    "total": 9,
+    "details": {
+      "eth_chainId": {
+        "supported": true
+      },
+      "eth_blockNumber": {
+        "supported": true
+      },
+      "eth_getBalance": {
+        "supported": true
+      },
+      "eth_gasPrice": {
+        "supported": true
+      },
+      "eth_estimateGas": {
+        "supported": true
+      },
+      "eth_call": {
+        "supported": true
+      },
+      "eth_sendRawTransaction": {
+        "supported": false,
+        "error": "could not coalesce error (error={ \"code\": -32602, \"data\": \"RlpIncorrectListLen\", \"message\": \"Invalid RLP.\" }, payload={ \"id\": 21, \"jsonrpc\": \"2.0\", \"method\": \"eth_sendRawTransaction\", \"params\": [ \"0x\" ] }, code=UNKNOWN_ERROR, version=6.15.0)"
+      },
+      "eth_getTransactionReceipt": {
+        "supported": true
+      },
+      "eth_getLogs": {
+        "supported": false,
+        "error": "server response 524 <none> (request={  }, response={  }, error=null, info={ \"requestUrl\": \"https://rpc.mfevscan.com\", \"responseBody\": \"error code: 524\", \"responseStatus\": \"524 <none>\" }, code=SERVER_ERROR, version=6.15.0)"
+      }
+    }
+  },
+  "finalVerdict": {
+    "evmVersion": "shanghai",
+    "solidity0823Compatible": true,
+    "productionReady": false,
+    "push0Supported": true,
+    "contractDeploymentWorking": false,
+    "rpcCompatibilityScore": 78
+  },
+  "recommendations": [
+    "✅ EVM is Shanghai compatible",
+    "✅ PUSH0 opcode supported",
+    "❌ Contract deployment failed",
+    "❌ PUSH0 in deployed contracts not working",
+    "❌ RPC compatibility issues detected",
+    "⚠️ Chain needs improvements for production"
+  ],
+  "chainInfo": {
+    "chainId": 9982,
+    "blockNumber": 5445697,
+    "rpcUrl": "https://rpc.mfevscan.com",
+    "balance": "0.291157100000269817"
+  }
+}
