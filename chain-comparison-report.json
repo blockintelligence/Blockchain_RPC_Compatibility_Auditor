@@ -1,0 +1,197 @@
+{
+  "MFEV Blockchain": {
+    "chainId": 9982,
+    "type": "mainnet",
+    "currentBlock": 5441543,
+    "rpcMethods": {
+      "eth_chainId": {
+        "supported": true,
+        "result": "0x26fe"
+      },
+      "eth_getLogs": {
+        "supported": true,
+        "result": []
+      },
+      "eth_feeHistory": {
+        "supported": true,
+        "result": {
+          "baseFeePerGas": [
+            "0x1ba60d337ff",
+            "0x1ba60d337ff",
+            "0x1ba60d337ff",
+            "0x1ba60d337ff",
+            "0x1ba60d337ff"
+          ],
+          "gasUsedRatio": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "oldestBlock": "0x530804",
+          "reward": [
+            [
+              "0x0",
+              "0x0"
+            ],
+            [
+              "0x0",
+              "0x0"
+            ],
+            [
+              "0x0",
+              "0x0"
+            ],
+            [
+              "0x0",
+              "0x0"
+            ]
+          ]
+        }
+      },
+      "eth_syncing": {
+        "supported": true,
+        "result": false
+      },
+      "eth_maxPriorityFeePerGas": {
+        "supported": true,
+        "result": "0x1"
+      },
+      "eth_gasPrice": {
+        "supported": true,
+        "result": "0x1ba60d33800"
+      },
+      "eth_blockNumber": {
+        "supported": true,
+        "result": "0x530807"
+      },
+      "eth_getBalance": {
+        "supported": true,
+        "result": "0x0"
+      },
+      "eth_call": {
+        "supported": true,
+        "result": "0x"
+      },
+      "eth_estimateGas": {
+        "supported": true,
+        "result": "0x5208"
+      }
+    },
+    "finality": {
+      "averageBlockTime": 5,
+      "maxBlockTime": 5,
+      "minBlockTime": 5,
+      "isStable": true
+    },
+    "erc4337": {
+      "supported": false,
+      "entryPointAddress": null
+    },
+    "getLogsStatus": "Works"
+  },
+  "BSC Testnet": {
+    "chainId": 97,
+    "type": "testnet",
+    "currentBlock": 60275039,
+    "rpcMethods": {
+      "eth_chainId": {
+        "supported": true,
+        "result": "0x61"
+      },
+      "eth_getLogs": {
+        "supported": false,
+        "error": "could not coalesce error (error={ \"code\": -32005, \"message\": \"limit exceeded\" }, payload={ \"id\": 5, \"jsonrpc\": \"2.0\", \"method\": \"eth_getLogs\", \"params\": [ { \"fromBlock\": \"0x397b95e\", \"toBlock\": \"0x397b95e\", \"topics\": [  ] } ] }, code=UNKNOWN_ERROR, version=6.15.0)"
+      },
+      "eth_feeHistory": {
+        "supported": true,
+        "result": {
+          "oldestBlock": "0x397b95d",
+          "reward": [
+            [
+              "0x8f0d180",
+              "0x8f0d180"
+            ],
+            [
+              "0x8f0d180",
+              "0x8f0d180"
+            ],
+            [
+              "0x8f0d180",
+              "0x8f0d180"
+            ],
+            [
+              "0x0",
+              "0x0"
+            ]
+          ],
+          "baseFeePerGas": [
+            "0x0",
+            "0x0",
+            "0x0",
+            "0x0",
+            "0x0"
+          ],
+          "gasUsedRatio": [
+            0.07044613554506822,
+            0.08593738924810213,
+            0.07990458645675097,
+            0
+          ],
+          "baseFeePerBlobGas": [
+            "0x1",
+            "0x1",
+            "0x1",
+            "0x1",
+            "0x1"
+          ],
+          "blobGasUsedRatio": [
+            0.16666666666666666,
+            0,
+            0.16666666666666666,
+            0
+          ]
+        }
+      },
+      "eth_syncing": {
+        "supported": true,
+        "result": false
+      },
+      "eth_maxPriorityFeePerGas": {
+        "supported": true,
+        "result": "0x5f5e100"
+      },
+      "eth_gasPrice": {
+        "supported": true,
+        "result": "0x5f5e100"
+      },
+      "eth_blockNumber": {
+        "supported": true,
+        "result": "0x397b961"
+      },
+      "eth_getBalance": {
+        "supported": true,
+        "result": "0x24cba962a446176061a"
+      },
+      "eth_call": {
+        "supported": true,
+        "result": "0x"
+      },
+      "eth_estimateGas": {
+        "supported": true,
+        "result": "0x5208"
+      }
+    },
+    "finality": {
+      "averageBlockTime": 0.75,
+      "maxBlockTime": 1,
+      "minBlockTime": 0,
+      "isStable": true
+    },
+    "erc4337": {
+      "supported": true,
+      "entryPointAddress": "0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789"
+    },
+    "getLogsStatus": "Limited (range restrictions)"
+  }
+}

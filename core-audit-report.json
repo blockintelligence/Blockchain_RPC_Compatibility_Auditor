@@ -1,0 +1,184 @@
+{
+  "connection": true,
+  "deployment": true,
+  "rpcMethods": {
+    "eth_chainId": {
+      "supported": true,
+      "result": "0x26fe"
+    },
+    "eth_getLogs": {
+      "supported": true,
+      "result": []
+    },
+    "eth_feeHistory": {
+      "supported": true,
+      "result": {
+        "baseFeePerGas": [
+          "0x1ba60d337ff",
+          "0x1ba60d337ff",
+          "0x1ba60d337ff",
+          "0x1ba60d337ff",
+          "0x1ba60d337ff"
+        ],
+        "gasUsedRatio": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "oldestBlock": "0x53082b",
+        "reward": [
+          [
+            "0x0",
+            "0x0"
+          ],
+          [
+            "0x0",
+            "0x0"
+          ],
+          [
+            "0x0",
+            "0x0"
+          ],
+          [
+            "0x0",
+            "0x0"
+          ]
+        ]
+      }
+    },
+    "eth_syncing": {
+      "supported": true,
+      "result": false
+    },
+    "eth_maxPriorityFeePerGas": {
+      "supported": true,
+      "result": "0x1"
+    },
+    "eth_gasPrice": {
+      "supported": true,
+      "result": "0x1ba60d33800"
+    },
+    "eth_blockNumber": {
+      "supported": true,
+      "result": "0x53082e"
+    },
+    "eth_getBalance": {
+      "supported": true,
+      "result": "0x1bc16d674ec80000"
+    },
+    "eth_call": {
+      "supported": true,
+      "result": "0x"
+    },
+    "eth_estimateGas": {
+      "supported": true,
+      "result": "0x5208"
+    }
+  },
+  "eips": {
+    "EIP-1559": false,
+    "EIP-1559_BaseFee": false,
+    "EIP-1559_PriorityFee": true,
+    "EIP-1344": true,
+    "EIP-3198": true,
+    "EIP-3651": true,
+    "EIP-2718": true,
+    "EIP-2930": true,
+    "EIP-3860": true,
+    "EIP-3855": false,
+    "EIP-211": false,
+    "EIP-145": false
+  },
+  "opcodes": {
+    "PUSH0": false,
+    "RETURNDATASIZE": false,
+    "SHL": false,
+    "SHR": false,
+    "CALLCODE": false,
+    "Error": "deferred error during ABI decoding triggered accessing index 0"
+  },
+  "finality": {
+    "averageBlockTime": 5,
+    "maxBlockTime": 5,
+    "minBlockTime": 5,
+    "isStable": true,
+    "blocks": [
+      {
+        "number": 5441582,
+        "timestamp": 1754040110,
+        "hash": "0x9e46a2d2de97f66f2d1cafb1b45f527f7612160a2fccc46578bb852a9b7dd0e0"
+      },
+      {
+        "number": 5441581,
+        "timestamp": 1754040105,
+        "hash": "0x1074574553df0c325e6ea365b0a2ce64922eb362af490d450d2b4538912a2137"
+      },
+      {
+        "number": 5441580,
+        "timestamp": 1754040100,
+        "hash": "0x377af63aef5e3b6b61d6c225927e87b99fb1fe63095d1e0b1c2e7468b7807024"
+      }
+    ]
+  },
+  "erc4337": {
+    "supported": false,
+    "entryPointAddress": null,
+    "description": null
+  },
+  "integration": {
+    "fireblocks": {
+      "ready": false,
+      "score": 90,
+      "requirements": {
+        "rpcMethods": true,
+        "eip1559": false,
+        "stableFinality": true
+      }
+    },
+    "metamask": {
+      "ready": false,
+      "score": 85,
+      "requirements": {
+        "eip1559": false,
+        "stableFinality": true
+      }
+    },
+    "walletconnect": {
+      "ready": false,
+      "score": 70,
+      "requirements": {
+        "eip1559": false
+      }
+    },
+    "layerzero": {
+      "ready": false,
+      "score": 85,
+      "requirements": {
+        "eip1559": false,
+        "stableFinality": true
+      }
+    },
+    "bridges": {
+      "ready": false,
+      "score": 85,
+      "requirements": {
+        "eip1559": false,
+        "stableFinality": true
+      }
+    }
+  },
+  "recommendations": [
+    "Implement missing EIPs: EIP-1559, EIP-3855, EIP-211, EIP-145",
+    "Deploy ERC-4337 EntryPoint for account abstraction support",
+    "🛠️  Chain needs improvements for production readiness"
+  ],
+  "chainInfo": {
+    "blockNumber": "5441581",
+    "chainId": 9982,
+    "rpcUrl": "https://rpc.mfevscan.com",
+    "balance": "2.0",
+    "address": "0xcd6f9715eAD50841929C5cda9ad78605AF71F1f2"
+  },
+  "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+}

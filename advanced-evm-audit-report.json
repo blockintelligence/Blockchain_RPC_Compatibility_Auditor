@@ -1,0 +1,268 @@
+{
+  "connection": true,
+  "deployment": true,
+  "evmVersion": "shanghai",
+  "soliditySupport": {
+    "Version_0_8_23": true,
+    "Shanghai_EVM": true,
+    "PUSH0_Support": true,
+    "BaseFee_Support": true,
+    "ChainId_Support": true,
+    "Typed_Transactions": true,
+    "Access_Lists": true,
+    "BASEFEE_Opcode": true,
+    "Warm_COINBASE": true,
+    "Initcode_Metering": true
+  },
+  "eips": {
+    "EIP-1559": true,
+    "EIP-1344": true,
+    "EIP-3198": true,
+    "EIP-3651": true,
+    "EIP-3855": true,
+    "EIP-211": true,
+    "EIP-145": true,
+    "EIP-2718": true,
+    "EIP-2930": true,
+    "EIP-3860": true
+  },
+  "opcodes": {
+    "PUSH0": true,
+    "RETURNDATASIZE": true,
+    "SHL": true,
+    "SHR": true,
+    "CALLCODE": true
+  },
+  "gasFeatures": {
+    "EIP-1559_BaseFee": true,
+    "EIP-1559_PriorityFee": true,
+    "BaseFee": "1899999999999",
+    "PriorityFee": "1500000000"
+  },
+  "latestFeatures": {
+    "EIP-4844_BlobBaseFee": {
+      "supported": false,
+      "error": "could not coalesce error (error={ \"code\": -32601, \"message\": \"Method not found\" }, payload={ \"id\": 15, \"jsonrpc\": \"2.0\", \"method\": \"eth_blobBaseFee\", \"params\": [  ] }, code=UNKNOWN_ERROR, version=6.15.0)"
+    },
+    "EIP-1153_TransientStorage": {
+      "supported": false,
+      "error": "could not coalesce error (error={ \"code\": -32601, \"message\": \"Method not found\" }, payload={ \"id\": 16, \"jsonrpc\": \"2.0\", \"method\": \"eth_getTransientStorage\", \"params\": [ \"0x0\", \"0x0\" ] }, code=UNKNOWN_ERROR, version=6.15.0)"
+    },
+    "EIP-4788_BeaconRoot": {
+      "supported": false,
+      "error": "could not coalesce error (error={ \"code\": -32601, \"message\": \"Method not found\" }, payload={ \"id\": 17, \"jsonrpc\": \"2.0\", \"method\": \"eth_getBeaconRoot\", \"params\": [ \"latest\" ] }, code=UNKNOWN_ERROR, version=6.15.0)"
+    },
+    "EIP-5656_MCOPY": {
+      "supported": true,
+      "value": "0x"
+    },
+    "EIP-6780_SELFDESTRUCT": {
+      "supported": true,
+      "value": "0x"
+    }
+  },
+  "recommendations": [
+    "Consider implementing latest features: EIP-4844_BlobBaseFee, EIP-1153_TransientStorage, EIP-4788_BeaconRoot",
+    "Chain is well-suited for Solidity 0.8.23 development",
+    "✅ Chain is production-ready for wallet and exchange integrations",
+    "🔧 Implement missing essential RPC methods for full compatibility"
+  ],
+  "chainInfo": {
+    "chainId": 9982,
+    "blockNumber": 5444434,
+    "rpcUrl": "https://rpc.mfevscan.com",
+    "balance": "2.0"
+  },
+  "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "integrationReadiness": {
+    "rpcMethods": {
+      "score": 71,
+      "supported": 10,
+      "total": 14,
+      "details": {
+        "eth_chainId": {
+          "supported": true,
+          "result": "0x26fe"
+        },
+        "eth_blockNumber": {
+          "supported": true,
+          "result": "0x531352"
+        },
+        "eth_getBalance": {
+          "supported": true,
+          "result": "0x0"
+        },
+        "eth_gasPrice": {
+          "supported": true,
+          "result": "0x1ba60d33800"
+        },
+        "eth_estimateGas": {
+          "supported": true,
+          "result": "0x5208"
+        },
+        "eth_call": {
+          "supported": true,
+          "result": "0x"
+        },
+        "eth_sendRawTransaction": {
+          "supported": false,
+          "error": "could not coalesce error (error={ \"code\": -32602, \"message\": \"Invalid params: invalid length 0, expected a tuple of size 1.\" }, payload={ \"id\": 26, \"jsonrpc\": \"2.0\", \"method\": \"eth_sendRawTransaction\", \"params\": [  ] }, code=UNKNOWN_ERROR, version=6.15.0)"
+        },
+        "eth_getTransactionReceipt": {
+          "supported": false,
+          "error": "could not coalesce error (error={ \"code\": -32602, \"message\": \"Invalid params: invalid length 0, expected a tuple of size 1.\" }, payload={ \"id\": 27, \"jsonrpc\": \"2.0\", \"method\": \"eth_getTransactionReceipt\", \"params\": [  ] }, code=UNKNOWN_ERROR, version=6.15.0)"
+        },
+        "eth_getLogs": {
+          "supported": true,
+          "result": []
+        },
+        "eth_getBlockByNumber": {
+          "supported": true,
+          "result": {
+            "author": "0x90980525360bc40b793aed9de167542a807a3c99",
+            "baseFeePerGas": "0x1ba60d337ff",
+            "difficulty": "0xfffffffffffffffffffffffffffffffe",
+            "extraData": "0xdb830303058c4f70656e457468657265756d86312e35382e31826c69",
+            "gasLimit": "0x989680",
+            "gasUsed": "0x0",
+            "hash": "0x4ad77954e49aa1c4a12231e412c295502025ae5a121156faa8c563d4fe0f8d76",
+            "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "miner": "0x90980525360bc40b793aed9de167542a807a3c99",
+            "number": "0x531352",
+            "parentHash": "0x6a2c0e389e291eb2cdfd07d494bf3164279a56f41f0259659af4727f58774437",
+            "receiptsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "sealFields": [
+              "0x8414e8f2fa",
+              "0xb84138dee3da133efdb1ac24c277320b4e7bbc6feeca854b3e8582d40ae1e33c898575c43bf9939ca9033b98ca0f3809d450b57e84feea6ef405abfa4b55bd5bdd0900"
+            ],
+            "sha3Uncles": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+            "signature": "38dee3da133efdb1ac24c277320b4e7bbc6feeca854b3e8582d40ae1e33c898575c43bf9939ca9033b98ca0f3809d450b57e84feea6ef405abfa4b55bd5bdd0900",
+            "size": "0x250",
+            "stateRoot": "0x9ea248a7a999a6e59f238578f58070865cd42f041e69604475bacf62e6183015",
+            "step": "350810874",
+            "timestamp": "0x688cbee2",
+            "totalDifficulty": "0x531351ffffffffffffffffffffffffeac5f9b4",
+            "transactions": [],
+            "transactionsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "uncles": []
+          }
+        },
+        "eth_getBlockByHash": {
+          "supported": false,
+          "error": "could not coalesce error (error={ \"code\": -32602, \"message\": \"Invalid params: invalid length 0, expected a tuple of size 2.\" }, payload={ \"id\": 31, \"jsonrpc\": \"2.0\", \"method\": \"eth_getBlockByHash\", \"params\": [  ] }, code=UNKNOWN_ERROR, version=6.15.0)"
+        },
+        "eth_getTransactionByHash": {
+          "supported": false,
+          "error": "could not coalesce error (error={ \"code\": -32602, \"message\": \"Invalid params: invalid length 0, expected a tuple of size 1.\" }, payload={ \"id\": 32, \"jsonrpc\": \"2.0\", \"method\": \"eth_getTransactionByHash\", \"params\": [  ] }, code=UNKNOWN_ERROR, version=6.15.0)"
+        },
+        "eth_getTransactionCount": {
+          "supported": true,
+          "result": "0x0"
+        },
+        "eth_feeHistory": {
+          "supported": true,
+          "result": {
+            "baseFeePerGas": [
+              "0x1ba60d337ff",
+              "0x1ba60d337ff",
+              "0x1ba60d337ff",
+              "0x1ba60d337ff",
+              "0x1ba60d337ff"
+            ],
+            "gasUsedRatio": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "oldestBlock": "0x53134f",
+            "reward": [
+              [
+                "0x0",
+                "0x0"
+              ],
+              [
+                "0x0",
+                "0x0"
+              ],
+              [
+                "0x0",
+                "0x0"
+              ],
+              [
+                "0x0",
+                "0x0"
+              ]
+            ]
+          }
+        }
+      }
+    },
+    "finality": {
+      "score": 100,
+      "status": "Stable"
+    },
+    "transactions": {
+      "score": 100,
+      "status": "Fully Supported"
+    },
+    "overall": {
+      "score": 90,
+      "level": "Production Ready",
+      "status": "✅"
+    },
+    "providers": {
+      "fireblocks": {
+        "score": 86,
+        "requirements": {
+          "essentialRPC": false,
+          "stableFinality": true,
+          "transactionSupport": true
+        },
+        "level": "Mostly Ready",
+        "status": "⚠️"
+      },
+      "metamask": {
+        "score": 86,
+        "requirements": {
+          "essentialRPC": false,
+          "transactionSupport": true,
+          "gasEstimation": true
+        },
+        "level": "Mostly Ready",
+        "status": "⚠️"
+      },
+      "walletconnect": {
+        "score": 86,
+        "requirements": {
+          "essentialRPC": false,
+          "stableFinality": true,
+          "transactionSupport": true
+        },
+        "level": "Mostly Ready",
+        "status": "⚠️"
+      },
+      "exchanges": {
+        "score": 90,
+        "requirements": {
+          "essentialRPC": false,
+          "stableFinality": true,
+          "transactionSupport": true,
+          "logRetrieval": true
+        },
+        "level": "Production Ready",
+        "status": "✅"
+      },
+      "bridges": {
+        "score": 86,
+        "requirements": {
+          "essentialRPC": false,
+          "transactionSupport": true,
+          "gasEstimation": true
+        },
+        "level": "Mostly Ready",
+        "status": "⚠️"
+      }
+    }
+  }
+}

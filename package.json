@@ -1,0 +1,46 @@
+{
+  "name": "blockchain-rpc-check",
+  "version": "1.0.0",
+  "description": "EVM Blockchain Compatibility Auditor and Smart Contract Tester",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js",
+    "audit": "hardhat run scripts/audit.js",
+    "infrastructure-audit": "hardhat run scripts/infrastructure-audit.js",
+    "core-audit": "hardhat run scripts/core-audit.js",
+    "select-chain": "node scripts/select-chain.js",
+    "test-getlogs": "node scripts/test-getlogs.js",
+    "debug-getlogs": "node scripts/debug-getlogs.js",
+    "working-logs": "node scripts/working-log-retrieval.js",
+    "compare-chains": "node scripts/chain-comparison.js",
+    "summary": "node scripts/final-summary.js",
+    "advanced-audit": "hardhat run scripts/advanced-evm-audit.js",
+    "upgrade-recommendations": "node scripts/upgrade-recommendations.js",
+    "multi-chain-audit": "node scripts/multi-chain-audit.js",
+    "comprehensive-test": "node scripts/comprehensive-smart-contract-test.js",
+    "report": "node scripts/generate-report.js"
+  },
+  "keywords": [
+    "blockchain",
+    "evm",
+    "compatibility",
+    "audit",
+    "solidity"
+  ],
+  "author": "Blockchain Auditor",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "ethers": "^6.8.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "dotenv": "^17.2.1",
+    "ora": "^7.0.1"
+  }
+}
